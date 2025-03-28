@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="51.972" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="Login Functionality" name="Login with valid credentials - #1.1" time="7.436">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User enters the valid email address ak@sample.com......................passed
+And Valid password <psassword>..............................................passed
+And Clicks on login button..................................................passed
+Then User should get logged in successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with valid credentials - #1.2" time="6.721">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User enters the valid email address bk@sample.com......................passed
+And Valid password <psassword>..............................................passed
+And Clicks on login button..................................................passed
+Then User should get logged in successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with valid credentials - #1.3" time="10">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User enters the valid email address ck@sample.com......................passed
+And Valid password <psassword>..............................................passed
+And Clicks on login button..................................................passed
+Then User should get logged in successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with invalid credentials" time="7.104">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User enters the invalid email address "amatooricap@gmail.com"..........passed
+And Invalid Password "1234".................................................passed
+And Clicks on login button..................................................passed
+Then User should not get logged in..........................................passed
+And User should get warning message.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with invalid email address and valid password" time="6.154">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User enters the invalid email address "amatooricap@gmail.com"..........passed
+And Valid password1 "Ak@1234#"..............................................passed
+And Clicks on login button..................................................passed
+Then User should not get logged in..........................................passed
+And User should get warning message.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login with valid email address and invalid password" time="8.177">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User enters the valid email1 address "ak@sample.com "..................passed
+And Invalid Password "12345"................................................passed
+And Clicks on login button..................................................passed
+Then User should not get logged in..........................................passed
+And User should get warning message.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Login without providing any credentials" time="5.906">
+<system-out><![CDATA[
+Given User navigates to the login page......................................passed
+When User does not enter the email address..................................passed
+And User does not enter the password........................................passed
+And Clicks on login button..................................................passed
+Then User should not get logged in..........................................passed
+And User should get warning message.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
